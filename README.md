@@ -17,8 +17,8 @@ Description:
 ```
 # simple_cpp_project17
  * Requires C++17 support
- * Generates ArgumentParser [see github](https://github.com/balintt21/cpp_argument_parser)
- * Generates CommandLine [see github](https://github.com/balintt21/cpp_argument_parser)
+ * Generates [ArgumentParser](https://github.com/balintt21/cpp_argument_parser/blob/master/argument_parser.h) [see github](https://github.com/balintt21/cpp_argument_parser)
+ * Generates [CommandLine](https://github.com/balintt21/cpp_argument_parser/blob/master/command_line.h) [see github](https://github.com/balintt21/cpp_argument_parser)
 ## Install
 ```
 sudo wget https://raw.githubusercontent.com/balintt21/simple_cpp_project/master/simple_cpp_project17 -O /usr/local/bin/simple_cpp_project17
