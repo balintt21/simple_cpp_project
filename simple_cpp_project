@@ -1,0 +1,44 @@
+#!/bin/bash
+
+#SETTINGS
+makefile_url="https://raw.githubusercontent.com/balintt21/simple_make_file/master/Makefile"
+main_cpp_template_base64="I2luY2x1ZGUgPGNzdGRpbz4KCmludCBtYWluKGludCBhcmdjLCBjaGFyKiogYXJndikKewogICAgcmV0dXJuIDA7Cn0="
+#DO NOT TOUCH
+print_usage()
+{
+    echo -e "Usage: $1 <NAME> [DIR]\n\nDescription:\n" \
+"\tInitializes a simple C++ project into DIR/NAME\n" \
+"\tBy default DIR is the current working directory (./)\n\n" \
+"\tFollowing files will be generated:\n" \
+"\tDIR/NAME/Makefile\n" \
+"\tDIR/NAME/src/main.cpp\n\n"
+
+}
+
+if [ $# -lt 1 ]; then
+    print_usage $0
+    exit 0
+fi
+
+project_dir="./"
+if [ $# -gt 1 ]; then
+    if [ ! -d "$2" ]; then
+        echo -e "[DIR] must exist for project initialization!\nNo such a file or directory: $2"
+        exit 2
+    fi
+    project_dir="$2"
+fi
+
+project_path="$project_dir/$1"
+mkdir -p "$project_path"
+if [ $? -eq 0 ]; then
+    mkdir -p "$project_path/src"
+    if [ $? -eq 0 ]; then
+        echo "$main_cpp_template_base64" | base64 -d > "$project_path/src/main.cpp"
+        make_file_path="$project_path/Makefile"
+        wget "$makefile_url" -O "$make_file_path"
+        if [ $? -eq 0 ]; then
+            sed -i "s/myprogram/$1/g" "$make_file_path"
+        fi
+    fi
+fi
