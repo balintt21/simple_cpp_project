@@ -26,7 +26,7 @@ sudo wget https://raw.githubusercontent.com/balintt21/simple_cpp_project/master/
 ```
 ## Usage
 ```
-Usage: ./simple_cpp_project17 <NAME> [DIR]
+Usage: simple_cpp_project17 <NAME> [DIR]
 
 Description:
         Initializes a simple C++ project into DIR/NAME with
