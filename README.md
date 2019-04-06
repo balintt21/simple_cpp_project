@@ -35,7 +35,7 @@ Description:
         By default DIR is the current working directory (./)
 
         Following files will be generated:
-        	DIR/NAME/Makefile
+			DIR/NAME/Makefile
 			DIR/NAME/src/argument_parser.h
 			DIR/NAME/src/command_line.h
 			DIR/NAME/src/main.cpp
