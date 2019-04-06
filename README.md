@@ -12,8 +12,8 @@ Description:
  	By default DIR is the current working directory (./)
 
  	Following files will be generated:
- 	DIR/NAME/Makefile
- 	DIR/NAME/src/main.cpp
+ 		DIR/NAME/Makefile
+ 		DIR/NAME/src/main.cpp
 ```
 # simple_cpp_project17
  * Requires C++17 support
@@ -35,6 +35,8 @@ Description:
         By default DIR is the current working directory (./)
 
         Following files will be generated:
-        DIR/NAME/Makefile
-        DIR/NAME/src/main.cpp
+        	DIR/NAME/Makefile
+			DIR/NAME/src/argument_parser.h
+			DIR/NAME/src/command_line.h
+			DIR/NAME/src/main.cpp
 ```

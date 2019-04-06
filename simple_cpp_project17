@@ -12,8 +12,10 @@ print_usage()
 "\tInitializes a simple C++ project into DIR/NAME with\n\targument parsing and command line features.\n\n" \
 "\tBy default DIR is the current working directory (./)\n\n" \
 "\tFollowing files will be generated:\n" \
-"\tDIR/NAME/Makefile\n" \
-"\tDIR/NAME/src/main.cpp\n\n"
+"\t\tDIR/NAME/Makefile\n" \
+"\t\tDIR/NAME/src/argument_parser.h\n" \
+"\t\tDIR/NAME/src/command_line.h\n" \
+"\t\tDIR/NAME/src/main.cpp\n\n"
 
 }
 
