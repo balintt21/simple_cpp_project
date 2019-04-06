@@ -2,6 +2,7 @@
 ## Install
 ```
 sudo wget https://raw.githubusercontent.com/balintt21/simple_cpp_project/master/simple_cpp_project -O /usr/local/bin/simple_cpp_project
+sudo chmod 755 /usr/local/bin/simple_cpp_project
 ```
 ## Usage
 ```
@@ -23,6 +24,7 @@ Description:
 ## Install
 ```
 sudo wget https://raw.githubusercontent.com/balintt21/simple_cpp_project/master/simple_cpp_project17 -O /usr/local/bin/simple_cpp_project17
+sudo chmod 755 /usr/local/bin/simple_cpp_project17
 ```
 ## Usage
 ```
