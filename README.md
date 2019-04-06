@@ -29,14 +29,14 @@ sudo wget https://raw.githubusercontent.com/balintt21/simple_cpp_project/master/
 Usage: simple_cpp_project17 <NAME> [DIR]
 
 Description:
-        Initializes a simple C++ project into DIR/NAME with
-        argument parsing and command line features.
+	Initializes a simple C++ project into DIR/NAME with
+	argument parsing and command line features.
 
-        By default DIR is the current working directory (./)
+	By default DIR is the current working directory (./)
 
-        Following files will be generated:
-			DIR/NAME/Makefile
-			DIR/NAME/src/argument_parser.h
-			DIR/NAME/src/command_line.h
-			DIR/NAME/src/main.cpp
+	Following files will be generated:
+		DIR/NAME/Makefile
+		DIR/NAME/src/argument_parser.h
+		DIR/NAME/src/command_line.h
+		DIR/NAME/src/main.cpp
 ```
